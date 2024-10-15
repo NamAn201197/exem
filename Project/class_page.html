@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClassPage</title>
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./src/styles/class_page.css" />
+  </head>
+  <body>
+    <!-- logo -->
+    <div class="logoPage">
+      <figure>
+        <img src="" alt="" />
+        <figcaption>
+          <h2>Để nông dân biết Code</h2>
+        </figcaption>
+      </figure>
+      <h1>HỆ THỐNG QUẢN LÍ SINH VIÊN RIKKEI</h1>
+      <span>Đăng xuất</span>
+    </div>
+    <!-- Main  -->
+    <div class="container">
+      <!-- Thanh điều hướng -->
+      <div>
+        <nav class="controlList">
+          <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link" href="./control_page.html">Bảng điều khiển</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./course_page.html">Quản lý khóa học</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./class_page.html">Quản lý lớp học</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./student_page.html"
+                >Quản lý sinh viên</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./accuont_page.html"
+                >Quản lý tài khoản</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- Main -->
+      <!-- tiêu đề -->
+      <h1>QUẢN LÝ LỚP HỌC</h1>
+      <div>
+        <!-- chức năng -->
+        <div class="option">
+          <span class="addNew">Thêm mới</span>
+          <div>
+            <input
+              type="text"
+              id="searchBar"
+              placeholder="Nhập từ khóa tìm kiếm"
+            />
+            <span>Tìm kiếm</span>
+          </div>
+          <div>
+            <select>
+              <option selected>Sắp xếp</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+        <!-- danh sách lớp học -->
+        <table class="listClass">
+          <thead>
+            <th>STT</th>
+            <th>Mã lớp</th>
+            <th>Tên lớp</th>
+            <th>Giảng viên</th>
+            <th>Mô tả</th>
+            <th>Sĩ số</th>
+            <th>Trạng thái</th>
+            <th>Khóa học</th>
+            <th>Hành động</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>c001</td>
+              <td>HN</td>
+              <td>QuangND</td>
+              <td>Java fullstack</td>
+              <td>20</td>
+              <td>Chờ lớp</td>
+              <td>Khóa học 1</td>
+              <td class="actions">
+                <span>Sửa</span>
+                <span>Xóa</span>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>c002</td>
+              <td>ĐN</td>
+              <td>AnNV</td>
+              <td>Javascript</td>
+              <td>22</td>
+              <td>Hoạt động</td>
+              <td>Khóa học 1</td>
+              <td class="actions">
+                <span>Sửa</span>
+                <span>Xóa</span>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>c003</td>
+              <td>HCM</td>
+              <td>BìnhBV</td>
+              <td>Frontend</td>
+              <td>25</td>
+              <td>Kết thúc</td>
+              <td>Khóa học 1</td>
+              <td class="actions">
+                <span>Sửa</span>
+                <span>Xóa</span>
+              </td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>c004</td>
+              <td>FK</td>
+              <td>BìnhBV</td>
+              <td>Backend</td>
+              <td>20</td>
+              <td>Chờ lớp</td>
+              <td>Khóa học 2</td>
+              <td class="actions">
+                <span>Sửa</span>
+                <span>Xóa</span>
+              </td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>c005</td>
+              <td>HN</td>
+              <td>BìnhBV</td>
+              <td>Java fullstack</td>
+              <td>20</td>
+              <td>Chờ lớp</td>
+              <td>Khóa học 1</td>
+              <td class="actions">
+                <span>Sửa</span>
+                <span>Xóa</span>
+              </td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>c006</td>
+              <td>HN</td>
+              <td>BìnhBV</td>
+              <td>Java fullstack</td>
+              <td>20</td>
+              <td>Chờ lớp</td>
+              <td>Khóa học 3</td>
+              <td class="actions">
+                <span>Sửa</span>
+                <span>Xóa</span>
+              </td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>c007</td>
+              <td>HN</td>
+              <td>BìnhBV</td>
+              <td>Java fullstack</td>
+              <td>20</td>
+              <td>Chờ lớp</td>
+              <td>Khóa học 3</td>
+              <td class="actions">
+                <span>Sửa</span>
+                <span>Xóa</span>
+              </td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>c008</td>
+              <td>HN</td>
+              <td>BìnhBV</td>
+              <td>Java fullstack</td>
+              <td>20</td>
+              <td>Chờ lớp</td>
+              <td>Khóa học 2</td>
+              <td class="actions">
+                <span>Sửa</span>
+                <span>Xóa</span>
+              </td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>c009</td>
+              <td>HN</td>
+              <td>BìnhBV</td>
+              <td>Java fullstack</td>
+              <td>20</td>
+              <td>Chờ lớp</td>
+              <td>Khóa học 2</td>
+              <td class="actions">
+                <span>Sửa</span>
+                <span>Xóa</span>
+              </td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>c010</td>
+              <td>HN</td>
+              <td>BìnhBV</td>
+              <td>Java fullstack</td>
+              <td>20</td>
+              <td>Chờ lớp</td>
+              <td>Khóa học 3</td>
+              <td class="actions">
+                <span>Sửa</span>
+                <span>Xóa</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- thanh chuyển trang -->
+        <div>
+          <nav>
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="#">Previous</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- form thêm mới -->
+    <form class="alert" id="addNew">
+      <span>Thêm mới lớp học</span>
+      <span>X</span>
+      <div>
+        <table>
+          <tr>
+            <td>Mã lớp học <span>(*)</span></td>
+            <td>
+              <input type="text" placeholder="Nhập mã lớp học" />
+            </td>
+          </tr>
+          <tr>
+            <td>Tên lớp học <span>(*)</span></td>
+            <td>
+              <input type="text" placeholder="Nhập tên lớp học" />
+            </td>
+          </tr>
+          <tr>
+            <td>Giảng viên <span>(*)</span></td>
+            <td>
+              <input type="text" placeholder="Nhập tên giảng viên" />
+            </td>
+          </tr>
+          <tr>
+            <td>Sĩ số <span>(*)</span></td>
+            <td>
+              <input type="number" placeholder="Nhập sĩ số lớp" />
+            </td>
+          </tr>
+          <tr>
+            <td>Mô tả <span>(*)</span></td>
+            <td>
+              <textarea placeholder="Nhập vào mô tả lớp"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>Trạng thái</td>
+            <td>
+              <select id="classSelect">
+                <option value="1">Chờ lớp</option>
+                <option value="2">Hoạt động</option>
+                <option value="3">Kết thúc</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="btnForm">
+        <span>Thêm mới</span>
+        <span>Đóng</span>
+      </div>
+    </form>
+    <!-- Cập nhập khóa học -->
+    <form class="alert" id="updateNew">
+      <span>Modal - Cập nhập lớp học</span>
+      <span>X</span>
+      <div>
+        <table>
+          <tr>
+            <td>Mã lớp học <span>(*)</span></td>
+            <td>
+              <input type="text" placeholder="c001 - Readonly" />
+            </td>
+          </tr>
+          <tr>
+            <td>Tên lớp học <span>(*)</span></td>
+            <td>
+              <input type="text" placeholder="HN" />
+            </td>
+          </tr>
+          <tr>
+            <td>Giảng viên <span>(*)</span></td>
+            <td>
+              <select>
+                <option value="1">QuangND</option>
+                <option value="2">AnNV</option>
+                <option value="3">BìnhBV</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Sĩ số <span>(*)</span></td>
+            <td>
+              <input type="text" placeholder="20" />
+            </td>
+          </tr>
+          <tr>
+            <td>Mô tả</td>
+            <td>
+              <textarea placeholder="Java fullstack,..."></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>Trạng thái</td>
+            <td>
+              <select>
+                <option value="1">Chờ lớp</option>
+                <option value="2">Hoạt động</option>
+                <option value="3">Kết thúc</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="btnForm">
+        <span>Cập nhập</span>
+        <span>Đóng</span>
+      </div>
+    </form>
+    <!-- Xóa khóa học -->
+    <div class="alert" id="deleteAlert">
+      <span>Bạn chắc chắn muốn xóa lớp học?</span>
+      <span>X</span>
+      <div>
+        <span id="yes">Có</span>
+        <span id="no">Không</span>
+      </div>
+    </div>
+    <!-- footer -->
+    <div>
+      <span>Copyright Rikkei Academy @2023</span>
+    </div>
+  </body>
+</html>

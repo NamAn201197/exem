@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* danh sách tài khoản */
+
+.listAccount {
+  text-align: center;
+}
+
+.listAccount th {
+  background-color: wheat;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.listAccount td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.listAccount .actions:last-child span {
+  border: 1px solid black;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* Alert */
+
+.alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+  /* z-index: 1001; Để hiển thị trên nền mờ */
+  display: none;
+}
